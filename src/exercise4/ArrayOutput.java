@@ -2,9 +2,6 @@ package exercise4;
 
 import java.util.Scanner;
 
-import java.util.Arrays;
-
-
 public class ArrayOutput {
 
   public static void main(String[] args) {
@@ -23,7 +20,7 @@ public class ArrayOutput {
       for(int j = 0; j < array.length; j++) {
         System.out.print(" ");
       }
-      System.out.println(array[index]);
+     System.out.print(array[index]);
     }
 
 
