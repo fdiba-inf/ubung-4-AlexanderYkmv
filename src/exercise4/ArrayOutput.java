@@ -11,7 +11,7 @@ public class ArrayOutput {
 
     Scanner input = new Scanner(System.in);
 
-    System.out.print("Enter array lenght: ");
+    
 
 
     int size = input.nextInt();
