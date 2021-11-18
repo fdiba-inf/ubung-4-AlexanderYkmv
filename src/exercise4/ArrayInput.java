@@ -11,11 +11,12 @@ public class ArrayInput {
 
     int size = input.nextInt();
     int[] array = new int[size];
-
-    for(int a : array) {
+    
+     
+    for(int i = 0; i < array.length; i++) {
       System.out.print("Enter array value: ");
 
-      array[a] = input.nextInt();
+      array[i] = input.nextInt();
     }
     String numbers = Arrays.toString(array);
     System.out.println("Numbers: " + numbers);
