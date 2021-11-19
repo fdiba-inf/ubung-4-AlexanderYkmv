@@ -4,27 +4,25 @@ import java.util.Scanner;
 
 public class ArrayOutput {
 
-  public static void main(String[] args) {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
 
-    Scanner input = new Scanner(System.in);
+        System.out.print("Enter size: ");
+        int size = input.nextInt();
 
-    
+        int[] numbers = new int[size];
 
+        System.out.println("Enter numbers: ");
+        for (int index = 0; index < numbers.length; index++) {
+            numbers[index] = input.nextInt();
+        }
 
-    int size = input.nextInt();
-    int[] array = new int[size];
-    for(int index = 0; index < array.length; index++) {
-      array[index] = input.nextInt(); 
+        for (int index = 0; index < numbers.length; index++){
+            for (int space = 0; space < index; space ++){
+              System.out.print(" ");
+            }
+            System.out.println(numbers[index]);
+        }
     }
-    for(int i = 0; i < array.length; i++) {
-      for(int j = 0; j < array.length; j++) {
-        System.out.print(" ");
-      }
-       System.out.println(array[i]);
-  
-    }
-   
 
-
-  }
 }
