@@ -8,10 +8,10 @@ public class MinIndex {
     Scanner input = new Scanner(System.in);
 
     int size = input.nextInt();
-    int[] array = new int[size];
+    double[] array = new double[size];
 
     for(int i = 0; i < array.length; i++) {
-      array[i] = input.nextInt();
+      array[i] = input.nextDouble();
     }
 
     double min = array[0];
